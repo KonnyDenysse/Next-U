@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja de Vida Digital</title>
+</head>
+<body>
+    <head>
+        <img src="images/logo.svg" alt="Logo SVG" title="Logo SVG" width="200" height="100">
+        <h1>Curriculum Vitae</h1>
+        <h2>Konny Denysse Estévez</h2>
+        <h3>Quito, 31 de Agosto de 1976</h3>
+    </head>
+    <nav>
+        <a href="index.html" >Inicio</a>
+        <a href="educacion.html">Educación</a>
+        <a href="experiencia.html">Experiencia</a>
+    </nav>
+    <article>
+        <section>
+            <h2>Educación</h2>
+            <table border="black 1px solid">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Institución</th>
+                        <th>Lugar</th>
+                        <th>Culminó?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td>
+                        <td>Diseño y Evaluación de Proyectos con Marco Lógico</td>
+                        <td>Escuela Politécnica Nacional</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>Implementación y Mantenimiento de SQL Server 2005</td>
+                        <td>New Horizons</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>Diseño de Aplicaciones Windows mediante C# .NET</td>
+                        <td>New Horizons</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td>Ingenería de Sistemas e Informática</td>
+                        <td>Escuela Politécnica del Ejercito</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td>Ingeniería Electrónica en Automatización y Control</td>
+                        <td>Escuela Politécnica del Ejercito</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form method="POST" id="agregar_estudios" name="agregar_estudios" autocomplete="on" >
+                <h3>Agregar Estudios</h3>
+                <label for="anio"><b>Año:</b></label>
+                <select id="anio">
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                </select>
+                <br>
+                <label for="institucion"><b>Institución:</b></label>
+                <input id="institucion" type="text" required></input>
+                <br>
+                <label for="lugar"><b>Lugar:</b></label>
+                <textarea id="lugar"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar"></input>
+            </form>
+        </section>
+    </article>
+    <footer>
+        Email: konny.estevez@gmail.com<br/>
+        Celular: +593-991-398-258<br/>
+        Dirección: Miami Oe7D y Av. Giovanny Calles, Conj. Portal de Miami
+    </footer>
+</body>
+</html>
